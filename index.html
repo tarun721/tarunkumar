@@ -2,25 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tarun Kumar - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarun Kumar - UX Researcher Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <h1>Tarun Kumar</h1>
-    <p>Senior UX Researcher and Frontend Developer</p>
+    <!-- Header Section with Animation -->
+    <header class="header animate__animated animate__fadeIn">
+        <h1>Tarun Kumar</h1>
+        <p>Senior UX Researcher and Frontend Developer</p>
+    </header>
 
-    <h2>About Me</h2>
-    <p>Over 9 years of experience in UX research and frontend development...</p>
+    <!-- About Me Section -->
+    <section id="about" class="animate__animated animate__fadeInLeft">
+        <h2>About Me</h2>
+        <p>With over 9 years of experience in UX research and frontend development...</p>
+    </section>
 
-    <h2>Projects</h2>
-    <ul>
-        <li>Project 1: Enhancing UX for Data-Driven Applications</li>
-        <li>Project 2: Streamlining Financial Product Navigation</li>
-    </ul>
+    <!-- Projects Section with AOS Animation on Scroll -->
+    <section id="projects" data-aos="fade-up">
+        <h2>Projects</h2>
+        <ul>
+            <li>Project 1: Enhancing UX for Data-Driven Applications</li>
+            <li>Project 2: Streamlining Financial Product Navigation</li>
+        </ul>
+    </section>
 
-    <h2>Skills</h2>
-    <p>Angular, JavaScript, Figma, Power BI...</p>
+    <!-- Skills Section with Animation -->
+    <section id="skills" data-aos="zoom-in">
+        <h2>Skills</h2>
+        <p>Angular, JavaScript, Figma, Power BI...</p>
+    </section>
 
-    <h2>Contact</h2>
-    <p>Email: tarun.wd0071@gmail.com</p>
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-right">
+        <h2>Contact</h2>
+        <p>Email: tarun.wd0071@gmail.com</p>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
