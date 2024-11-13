@@ -3,47 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarun Kumar - UX Researcher Portfolio</title>
+    <title>Tarun Kumar - Professional Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Section with Animation -->
-    <header class="header animate__animated animate__fadeIn">
-        <h1>Tarun Kumar</h1>
-        <p>Senior UX Researcher and Frontend Developer</p>
+    <!-- Header Section -->
+    <header class="header" data-aos="fade-down">
+        <h1 class="title">Tarun Kumar</h1>
+        <p class="subtitle">Senior UX Researcher and Frontend Developer</p>
     </header>
 
-    <!-- About Me Section -->
-    <section id="about" class="animate__animated animate__fadeInLeft">
+    <!-- About Section -->
+    <section id="about" data-aos="fade-right">
         <h2>About Me</h2>
         <p>With over 9 years of experience in UX research and frontend development...</p>
     </section>
 
-    <!-- Projects Section with AOS Animation on Scroll -->
+    <!-- Projects Section -->
     <section id="projects" data-aos="fade-up">
         <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: Enhancing UX for Data-Driven Applications</h3>
+            <p>Conducted in-depth user research to drive informed design...</p>
+        </div>
+        <div class="project" data-aos="fade-up">
+            <h3>Project 2: Streamlining Financial Product Navigation</h3>
+            <p>Improved information architecture and user flows to enhance...</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" data-aos="zoom-in">
+        <h2>Skills</h2>
         <ul>
-            <li>Project 1: Enhancing UX for Data-Driven Applications</li>
-            <li>Project 2: Streamlining Financial Product Navigation</li>
+            <li>Angular</li>
+            <li>JavaScript</li>
+            <li>Figma</li>
+            <li>Power BI</li>
         </ul>
     </section>
 
-    <!-- Skills Section with Animation -->
-    <section id="skills" data-aos="zoom-in">
-        <h2>Skills</h2>
-        <p>Angular, JavaScript, Figma, Power BI...</p>
-    </section>
-
     <!-- Contact Section -->
-    <section id="contact" data-aos="fade-right">
+    <section id="contact" data-aos="fade-left">
         <h2>Contact</h2>
         <p>Email: tarun.wd0071@gmail.com</p>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

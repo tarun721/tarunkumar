@@ -1,9 +1,6 @@
-// Example of a simple script to add fade-in effects on scroll
-window.addEventListener('scroll', function() {
-    const sections = document.querySelectorAll('section');
-    sections.forEach(section => {
-        if (section.getBoundingClientRect().top < window.innerHeight) {
-            section.style.opacity = '1';
-        }
-    });
+// Initialize Animate on Scroll (AOS)
+AOS.init({
+    duration: 1200,  // Animation duration in milliseconds
+    easing: 'ease',  // Animation easing effect
+    once: true       // Animation happens only once
 });
