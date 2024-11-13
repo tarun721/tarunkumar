@@ -1,15 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // GSAP animations
-    gsap.from(".project-card", {
-        duration: 1,
-        y: 50,
-        opacity: 0,
-        stagger: 0.3
-    });
+document.addEventListener('DOMContentLoaded', () => {
+    const projects = document.querySelectorAll('.project');
+    
+    window.addEventListener('scroll', () => {
+        projects.forEach(project => {
+            const projectPosition = project.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
 
-    // Toggle dark mode
-    const toggleButton = document.querySelector("#toggle-dark-mode");
-    toggleButton.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
+            if (projectPosition < screenPosition) {
+                project.classList.add('active');
+            } else {
+                project.classList.remove('active');
+            }
+        });
     });
 });
