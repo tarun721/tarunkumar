@@ -7,71 +7,80 @@
 }
 
 body {
-    background-color: #1c1c1e;
-    color: #f5f5f7;
+    background-color: #f0f5fc;
+    color: #1c1c1e;
 }
 
-.header {
-    text-align: center;
-    padding: 50px;
-    background: linear-gradient(135deg, #5b86e5, #36d1dc);
+/* Hero Section with Animated Gradient */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s ease infinite;
 }
 
-.title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #ffffff;
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-.subtitle {
-    font-size: 1.2rem;
+.hero h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.5rem;
     margin-top: 10px;
-    font-weight: 300;
 }
 
+/* Superhero Style Sections */
 section {
     padding: 50px 20px;
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto;
-    border-left: 3px solid #5b86e5;
+    border-left: 5px solid #ff4b2b;
     border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
-    color: #36d1dc;
+    color: #ff416c;
 }
 
+/* Project and Skill Animations */
 .project, .skills {
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #36d1dc;
+    border: 2px solid #ff4b2b;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover, .skills:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(255, 75, 43, 0.2);
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
     display: flex;
     gap: 20px;
+    list-style: none;
     justify-content: center;
 }
 
 li {
-    padding: 10px;
-    background: #333;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-li:hover {
-    background: #5b86e5;
-}
-
+    padding: 10px 15px;
+    background-color: #ff416c;
+    color: #fff;
+    border-radi
